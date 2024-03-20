@@ -19,7 +19,7 @@ for(let i = 0; i < arrayLetras.length; i++){
         arrayVogais.push(arrayLetras[i]);
     }
 }
-console.log('nome:');
+console.log('nome:', nome );
 console.log('vogais encontradas:', arrayVogais.toString());
 console.log('total de vogais:' + arrayVogais.length);
 
@@ -31,15 +31,16 @@ for(let j = 0; j < arrayLetras.length; j++){
     }
 }
 
-console.log('nome:');
+console.log('nome:', nome);
 console.log('consoantes encontrados:', arrayConsoantes.toString());
 console.log('total de consoantes:' + arrayConsoantes.length);
 
 //espaços
 for(let k = 0; k < arrayLetras.length; k++){
+    if(nome.includes(arrayLetras[k])){
         arrayEspaço.push(arrayLetras[k]);
+    }
 }
 
-console.log('nome:');
-console.log('espaços encontrados:', arrayEspaço.toString());
+console.log('nome:', nome);
 console.log('total de espaço:' + arrayEspaço.length);
